@@ -30,7 +30,9 @@ class Dog
   end
   
   def save
-    
+    sql = <<-SQL
+    INSERT INTO dogs()
+    SQL
   end
   
   def self.new_from_db(row)
