@@ -40,8 +40,9 @@ class Dog
     self
   end
   
-  def self.create
-    dog =
+  def self.create(attrs)
+    dog = Dog.new(attrs)
+    
   end
   
   def self.new_from_db(row)
