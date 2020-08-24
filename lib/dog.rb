@@ -42,7 +42,8 @@ class Dog
   
   def self.create(attrs)
     dog = Dog.new(attrs)
-    
+    dog.save
+    dog
   end
   
   def self.new_from_db(row)
