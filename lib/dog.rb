@@ -45,4 +45,12 @@ class Dog
     Dog.new_from_db(dog_info)
   end
   
+  def update
+    
+  end
+  
+  def save
+    
+  end
+  
 end
