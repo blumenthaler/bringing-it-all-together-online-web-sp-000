@@ -41,8 +41,9 @@ class Dog
     SELECT * FROM dogs WHERE name = ?;
     SQL
     
-    dog_info = DB[:conn].execute(sql, name)
-    Dog.new_from_db(dog_info)
+    dog_info = DB[:conn].execute(sql, name).map do |row|
+      self.new_from_db(row)
+    end.first
   end
   
   def update
