@@ -73,6 +73,11 @@ class Dog
     end.first
   end  
   
+  def self.find_or_create_by(name:, breed:)
+  
+    
+  end
+  
   def update
     sql = <<-SQL
     UPDATE dogs SET name = ?, breed = ? WHERE id = ?;
