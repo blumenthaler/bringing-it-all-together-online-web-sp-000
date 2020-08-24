@@ -36,4 +36,6 @@ class Dog
     Dog.new(id: id, name: name, breed: breed)
   end
   
+  
+  
 end
