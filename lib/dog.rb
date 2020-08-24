@@ -30,7 +30,8 @@ class Dog
   end
   
   def self.new_from_db
-    
+    # return array of dog's data
+    # 
   end
   
 end
